@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const Banner = () => {
   const BannerImageStyle = {
-    backgroundImage : "url(src/assets/TouristBanner.jpg)",
+    backgroundImage : "url(/assets/TouristBanner.jpg)",
     backgroundSize : "cover",
     backgroundPosition:"center",
     width:"100%",

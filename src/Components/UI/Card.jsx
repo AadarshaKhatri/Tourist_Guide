@@ -1,16 +1,15 @@
-import React from 'react'
-import { FaLocationDot } from "react-icons/fa6";
 
+import { FaLocationDot } from "react-icons/fa6";
+import PropTypes from 'prop-types';
 const Card = (props) => {
   const cardImage  = {
-    backgroundImage: `url("src/assets/${props.image}")`,
+    backgroundImage: `url("/assets/${props.images}")`,
     backgroundSize: 'cover', // Optional: Ensures the image covers the div
     backgroundPosition: 'center',
-
   }
   return (
    <>
-   <div id = {props.key} className='flex flex-row justify-evenly'>
+   <div className='flex flex-row justify-evenly'>
    <div className='relative w-60 h-80 group' style = {cardImage}>
      {/* Hover  */}
     <div className='absolute inset-0 hidden group-hover:flex flex-col justify-between  bg-black bg-opacity-50 text-white cursor-pointer' style = {{backgroundColor:"rgba(0,0,0,0.5)"}}>
@@ -74,4 +73,11 @@ const Card = (props) => {
   )
 }
 
+Card.propTypes = {
+  images: PropTypes.string.isRequired,  // Ensure 'image' is a string and is required
+  place: PropTypes.string.isRequired,  // Ensure 'place' is a string and is required
+  placeInfo: PropTypes.string.isRequired,  // Ensure 'placeInfo' is a string and is required
+  TourLength: PropTypes.string.isRequired,  // Ensure 'TourLength' is a string and is required
+  TourDate: PropTypes.string.isRequired,  // Ensure 'TourDate' is a string and is required
+};
 export default Card

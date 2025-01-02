@@ -7,17 +7,17 @@ const Home = () => {
 
   const ImageSlider = [
     {
-      image: 'src/assets/KTM.png',
+      image: '/assets/KTM.png',
       title: 'Kathmandu',
       description: 'Kathmandu Valley is celebrated for its ancient temples and UNESCO World Heritage Sites. Its unique Newari architecture, vibrant festivals, and rich craftsmanship...',
     },
     {
-      image: 'src/assets/Pokhara.jpg',
+      image: '/assets/Pokhara.jpg',
       title: 'Pokhara',
       description: 'Pokhara is famous for its breathtaking natural beauty and adventure opportunities. It’s a popular destination for activities like paragliding and trekking.....',
     },
     {
-      image: 'src/assets/chitwan.png',
+      image: '/assets/chitwan.png',
       title: 'Chitwan',
       description: 'Chitwan is renowned for its rich wildlife and natural beauty. It’s a prime destination for jungle safaris and wildlife spotting, offering close encounters',
     },
@@ -50,9 +50,7 @@ const Home = () => {
     backgroundPosition: 'center',
     transition: 'background-image 1s ease-in-out', 
   };
-  const trans = {
-    backgroundColor:"rgba(255,255,255,0.4)"
-  }
+
 
   return (
     <>

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import  { useEffect, useRef } from 'react';
 import Card from './UI/Card';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -9,8 +9,17 @@ const UpcomingTours = () => {
   const cardInfoRef = useRef(null);
 
   const info = [
-    { image: "Picture1.png", place: "Janakpur", placeInfo: "Rich Cultural Heritage", TourLength: "6 days", TourDate: "1st Nov" },
-    { image: "Picture2.png", place: "Chitlang", placeInfo: "Tranquil Orchard Haven", TourLength: "12 days", TourDate: "10th Nov" },
+    { image: "Picture1.png",
+       place: "Janakpur", 
+       placeInfo: "Rich Cultural Heritage",
+        TourLength: "6 days",
+         TourDate: "1st Nov" },
+
+    { image: "Picture2.png",
+       place: "Chitlang",
+        placeInfo: "Tranquil Orchard Haven",
+         TourLength: "12 days",
+          TourDate: "10th Nov" },
     { image: "Picture3.png", place: "Bandipur", placeInfo: "Heritage HillTop Retreat", TourLength: "10 days", TourDate: "5th Nov" },
     { image: "Picture4.png", place: "Nagarkot", placeInfo: "Heritage Hills", TourLength: "2 days", TourDate: "3rd Nov" }
   ];
@@ -43,10 +52,9 @@ const UpcomingTours = () => {
         </div>
         <div ref={cardInfoRef} className="pb-5 flex flex-row justify-evenly mt-5">
           {info.map((element, index) => (
-            <Card
-              
+            <Card 
               key={index}
-              image={element.image}
+              images={element.image}
               place={element.place}
               placeInfo={element.placeInfo}
               TourLength={element.TourLength}

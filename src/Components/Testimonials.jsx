@@ -1,27 +1,27 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
-import { FaAngleLeft, FaAngleRight, FaRightLeft, FaStar } from 'react-icons/fa6'
+
+import { useState } from 'react'
+import { FaAngleLeft, FaAngleRight, FaStar } from 'react-icons/fa6'
 
 
 const Testimonials = () => {
   const [currentSlide , setcurrentSlide ] = useState(0);
   const slides = [
     {
-      image: "src/assets/pfp1.png", 
+      image: "/assets/pfp1.png", 
       name: "Christina",
       nameInfo: "Adventure Seeker",
       rating: 5,
       description: "An incredible place filled with rich culture and history. The locals are welcoming, and each moment is a new discovery. Truly unforgettable!"
     },
     {
-      image: "src/assets/pfp2.jpg", 
+      image: "/assets/pfp2.jpg", 
       name: "Aadarsha",
-      nameInfo: "Rider",
+      nameInfo: "Explorer",
       rating: 4,
       description: "From vibrant markets to stunning landscapes, every day felt like an adventure. Such a perfect mix of relaxation and excitement!"
     },
     {
-      image: "src/assets/pfp3.jpeg",  
+      image: "/assets/pfp3.jpeg",  
       name: "Liam",
       nameInfo: "Nature Lover",
       rating: 5,
